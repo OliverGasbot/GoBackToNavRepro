@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Nav_repro.Views"
+             x:Class="Nav_repro.Views.AddDeviceSuccessPage"
+             >
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Resources/Styles/Colors.xaml" />
+                <ResourceDictionary Source="/Resources/Styles/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+
+    </ContentPage.Resources>
+    <ScrollView>
+        <StackLayout Style="{StaticResource backgroundStyle}">
+            <Label>ligula lectus, bibendum quis ipsum nec, pellentesque tempus arcu. Mauris ac porttitor justo, quis malesuada est. Suspendisse potenti. Morbi ac neque felis. Proin vel volutpat mauris. Nullam et hendrerit lorem. Mauris quis aliquet ligula, tempus mattis nibh. Integer luctus, lacus et luctus faucibus, massa orci ullamcorper purus, aliquet placerat ex ante vitae mauris. Integer ligula diam, bibendum quis volutpat sed, consectetur tristique sapien. Aliquam consectetur dui id libero bibendum sagittis. Sed nec eleifend augue. Proin nec gravida lorem. Mauris sed arcu vitae enim auctor posuere. Praesent malesuada nunc eu libero porta, vitae sollicitudin tellus gravida. Sed risus nunc, auctor quis arcu non, gravida vestibulum ipsum.</Label>
+            <Button CornerRadius="6" TextColor="White" Clicked="BackToFleet_Clicked" BackgroundColor="{StaticResource colorGreenButton}" Text="Back To Fleet">
+
+            </Button>
+            <Button CornerRadius="6" TextColor="White" Clicked="BackToAddDevice_Clicked" BackgroundColor="{StaticResource colorGreenButton}" Text="Back To Add Device">
+
+            </Button>
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

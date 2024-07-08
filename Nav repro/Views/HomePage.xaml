@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:views="clr-namespace:Nav_repro.Views"
+            xmlns:android="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific;assembly=Microsoft.Maui.Controls"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            Style="{DynamicResource tabbedPageStyle}"
+             x:Class="Nav_repro.Views.HomePage"         
+            NavigationPage.HasNavigationBar="False">
+    <TabbedPage.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Resources/Styles/Colors.xaml" />
+                <ResourceDictionary Source="/Resources/Styles/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </TabbedPage.Resources>
+    <!--Pages can be added as references or inline-->
+    <views:AssetListPage x:Name="AssetList" Title="AssetList" NavigationPage.HasNavigationBar="False" IconImageSource="tint_solid.png"/>
+    <views:AddDevicePage x:Name="AddDevicePage" Title="Add Device" NavigationPage.HasNavigationBar="False" IconImageSource="plus.png"/>
+
+</TabbedPage>

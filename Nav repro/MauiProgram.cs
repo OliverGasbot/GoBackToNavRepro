@@ -39,7 +39,7 @@ namespace Nav_repro
                     var loggedIn = true;
                     var p = navigation.CreateBuilder();
                     if (loggedIn)
-                        p.AddSegment<HomePage>();
+                        p.AddSegment<RootPage>().AddSegment<HomePage>();
                     else
                         p.AddSegment<RootPage>().AddSegment<PlaceholderPage>();
                         //fake login page
